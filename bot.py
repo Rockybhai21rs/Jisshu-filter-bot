@@ -1,7 +1,6 @@
 import sys
 import glob
 import importlib
-from imdb import IMDb
 from pathlib import Path
 from pyrogram import idle
 import logging
