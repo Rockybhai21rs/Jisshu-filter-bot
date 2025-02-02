@@ -24,7 +24,7 @@ werkzeug==2.0.2
 Flask 
 itsdangerous==2.0.1 
 python-Levenshtein 
-libpng-dev
+libpng-dev==1.6.37
 zlib  
 libjpeg  
  
