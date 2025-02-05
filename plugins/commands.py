@@ -383,15 +383,20 @@ async def start(client:Client, message):
 
     files_ = await get_file_details(file_id)           
     if not files_:
-        pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
-        return await message.reply('<b>⚠️ ᴀʟʟ ꜰɪʟᴇs ɴᴏᴛ ꜰᴏᴜɴᴅ ⚠️</b>')
-    files = files_[0]
-    settings = await get_settings(grp_id , pm_mode=pm_mode)
-    CAPTION = settings['caption']
-    f_caption = CAPTION.format(
-        file_name = formate_file_name(files.file_name),
-        file_size = get_size(files.file_size),
-        file_caption=files.caption
+    pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
+    return await message.reply('<b>⚠️ ᴀʟʟ ꜰɪʟᴇs ɴᴏᴛ ꜰᴏᴜɴᴅ ⚠️</b>')
+
+files = files_[0]
+settings = await get_settings(grp_id, pm_mode=pm_mode)
+
+CAPTION = settings['caption']
+# Add "Movie Pirates" as part of the caption string
+f_caption = f"@Real_Pirates\n{CAPTION.format(
+    file_name=formate_file_name(files.file_name),
+    file_size=get_size(files.file_size),
+    file_caption=files.caption
+)}"
+
     )
     btn = [[
         InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f'stream#{file_id}')
