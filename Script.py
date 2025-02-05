@@ -115,8 +115,8 @@ User - {}"""
 ⭐ Rating: {rating} / 10</b>
 """
 
-    FILE_CAPTION = """<b>{file_name}\n\n𝖩𝗈𝗂𝗇➥ 「<a href="https://t.me/Real_Pirates">Movie Pirates</a>」</b>
-    <blockquote><b><a href="https://t.me/Real_Pirates">{file_name}</a></b></blockquote>
+    FILE_CAPTION = """ Title :
+    <b>{file_name}𝖩𝗈𝗂𝗇➥ 「<a href="https://t.me/Real_Pirates">Movie Pirates</a></b>
     <blockquote><b></b>@Real_Pirates</blockquote>"""
     
 
