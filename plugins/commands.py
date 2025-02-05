@@ -388,7 +388,7 @@ async def start(client:Client, message):
     files = files_[0]
     settings = await get_settings(grp_id , pm_mode=pm_mode)
     CAPTION = settings['caption']
-    f_caption = CAPTION.format( Movie Pirates
+    f_caption = CAPTION.format(
         file_name = formate_file_name(files.file_name),
         file_size = get_size(files.file_size),
         file_caption=files.caption
