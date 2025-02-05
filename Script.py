@@ -117,7 +117,7 @@ User - {}"""
 
     FILE_CAPTION = """ Title :
     <b>{file_name}𝖩𝗈𝗂𝗇➥ 「<a href="https://t.me/Real_Pirates">Movie Pirates</a></b>
-    <blockquote><b></b>@Real_Pirates</blockquote>"""
+    <blockquote><b>@Real_Pirates</b></blockquote>"""
     
 
     ALRT_TXT = """ᴊᴀʟᴅɪ ʏᴇʜᴀ sᴇ ʜᴀᴛᴏ !"""
