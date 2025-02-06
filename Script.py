@@ -115,7 +115,7 @@ User - {}"""
 ⭐ Rating: {rating} / 10</b>
 """
 
-    FILE_CAPTION = """Title: <b>{file_name} 𝖩𝗈𝗂𝗇 ➥</b> <a href="https://t.me/Real_Pirates"><b>Movie Pirates</b></a>
+    FILE_CAPTION = """Title: <b>{file_name} Come ➥</b> <a href="https://t.me/Real_Pirates"><b>Movie Pirates</b></a>
 <blockquote><b>@Real_Pirates</b></blockquote>"""
 
     
